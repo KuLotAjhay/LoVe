@@ -1,0 +1,597 @@
+/* ==================================================
+   OUR LOVE STORY
+   ANIMATIONS
+================================================== */
+
+
+/* ==========================
+   FADE IN
+========================== */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================
+   FLOAT
+========================== */
+
+@keyframes float {
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================
+   HEART BEAT
+========================== */
+
+@keyframes heartbeat {
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    15%{
+
+        transform:scale(1.15);
+
+    }
+
+    30%{
+
+        transform:scale(1);
+
+    }
+
+    45%{
+
+        transform:scale(1.18);
+
+    }
+
+    60%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ==========================
+   GLOW
+========================== */
+
+@keyframes glow {
+
+    0%{
+
+        box-shadow:0 0 20px rgba(255,92,138,.3);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 60px rgba(255,92,138,.8);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 20px rgba(255,92,138,.3);
+
+    }
+
+}
+
+
+/* ==========================
+   GRADIENT SHIFT
+========================== */
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+
+/* ==========================
+   ROTATE
+========================== */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* ==========================
+   SCALE IN
+========================== */
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.6);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ==========================
+   SLIDE LEFT
+========================== */
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* ==========================
+   SLIDE RIGHT
+========================== */
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* ==========================
+   LOADER
+========================== */
+
+@keyframes loaderPulse{
+
+    0%{
+
+        transform:scale(.7);
+        opacity:.4;
+
+    }
+
+    50%{
+
+        transform:scale(1.1);
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(.7);
+        opacity:.4;
+
+    }
+
+}
+
+
+/* ==========================
+   TWINKLE
+========================== */
+
+@keyframes twinkle{
+
+    0%{
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+    }
+
+}
+
+
+/* ==========================
+   FALL
+========================== */
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-120px) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translateY(110vh) rotate(360deg);
+
+    }
+
+}
+
+
+/* ==========================
+   BOUNCE
+========================== */
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+
+/* ==========================
+   SHIMMER
+========================== */
+
+@keyframes shimmer{
+
+    0%{
+
+        transform:translateX(-100%);
+
+    }
+
+    100%{
+
+        transform:translateX(250%);
+
+    }
+
+}
+
+
+/* ==========================
+   SECTION ANIMATIONS
+========================== */
+
+.section-title{
+
+    animation:fadeIn 1s ease both;
+
+}
+
+.glass-card{
+
+    animation:scaleIn .9s ease both;
+
+}
+
+.primary-btn{
+
+    animation:glow 3s infinite;
+
+}
+
+.logo{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.loader-heart{
+
+    animation:loaderPulse 1.5s infinite;
+
+}
+
+.heart-container{
+
+    animation:heartbeat 1.4s infinite;
+
+}
+
+.photo-card{
+
+    transition:.45s;
+
+}
+
+.photo-card:hover{
+
+    transform:
+
+        perspective(1200px)
+
+        rotateY(10deg)
+
+        scale(1.05);
+
+}
+
+.timeline-card{
+
+    transition:.4s;
+
+}
+
+.timeline-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ==========================================
+   HEART FLOAT
+========================================== */
+
+@keyframes heartFloat{
+
+    0%{
+
+        transform:
+        translateY(0)
+        translateX(0)
+        rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    10%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-50vh)
+        translateX(30px)
+        rotate(180deg);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(-120vh)
+        translateX(-40px)
+        rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================
+   PETAL FLOAT
+========================================== */
+
+@keyframes petalFloat{
+
+    0%{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    10%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-55vh)
+        translateX(50px)
+        rotate(180deg);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(-120vh)
+        translateX(-60px)
+        rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================
+TIMELINE REVEAL
+========================================== */
+
+.timeline-show{
+
+    animation:timelineReveal .8s forwards;
+
+}
+
+@keyframes timelineReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+BLINK CURSOR
+========================================== */
+
+#typewriter::after{
+
+content:"|";
+
+margin-left:3px;
+
+animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:0;
+
+}
+
+}
+
+/* ======================================
+ALBUM ROTATION
+====================================== */
+
+.spin{
+
+animation:spin 6s linear infinite;
+
+}
+
+@keyframes spin{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
